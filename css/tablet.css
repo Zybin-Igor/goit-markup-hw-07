@@ -1,0 +1,147 @@
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .header {
+    padding-bottom: 10px;
+  }
+
+  .page-nav {
+    gap: 87px;
+  }
+
+  .page-nav.list,
+  .address {
+    display: flex;
+  }
+
+  .address {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
+    gap: 4px;
+  }
+
+  .page-nav.list {
+    gap: 40px;
+  }
+
+  .mob-menu,
+  .menu-open {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 108px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tab.jpg);
+  }
+  .hero .hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 40px;
+    max-width: 496px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-tab-2x.jpg);
+    }
+  }
+  .skils-item {
+    width: 351px;
+  }
+
+  .skils-list {
+    display: flex;
+    /* flex-wrap: nowrap; */
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .skils-list .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--logo-color);
+    margin-bottom: 8px;
+    text-align: left;
+  }
+
+  .team-card {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .team-list {
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+  .section-secondary {
+    padding-bottom: 104px;
+  }
+  .section-secondary > .container,
+  .clients > .container {
+    width: 582px;
+  }
+  .clients-list {
+    gap: 24px;
+  }
+
+  .clients-item {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .footer > .container {
+    gap: 24px;
+  }
+
+  .footer-form {
+    justify-content: start;
+  }
+  .subscribe-form {
+    margin-right: 43px;
+  }
+  .subscribe-input {
+    width: 264px;
+  }
+
+  .subscribe-button {
+    justify-content: space-between;
+    margin-left: 0;
+  }
+
+  .footer .logo {
+    margin-bottom: 16px;
+  }
+
+  .soc-title {
+    text-align: left;
+  }
+  .logo-box {
+    margin-bottom: 0;
+  }
+  .logo-box > .logo {
+    text-align: left;
+  }
+  .soc-title {
+    text-align: left;
+  }
+  .modal {
+    width: 408px;
+    min-height: 586px;
+    padding: 72px 24px 24px 24px;
+  }
+}

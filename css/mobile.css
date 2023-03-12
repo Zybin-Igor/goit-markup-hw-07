@@ -1,0 +1,16 @@
+@media screen and (min-width: 480px) {
+  .container {
+    width: 428px;
+  }
+}
+.work-section {
+  display: none;
+}
+.skils-block {
+  display: none;
+}
+
+.page-nav.list,
+.address {
+  display: none;
+}

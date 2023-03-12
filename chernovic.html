@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEBSTUDIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css
+"
+    />
+    <link rel="stylesheet" href="./css/chernovic.css" />
+  </head>
+  <body>
+    <form class="form js-speaker-form">
+      <div class="form-field">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" name="user-name" id="name" autofocus placeholder="Taras Chevchenko" />
+      </div>
+      <div class="form-field">
+        <label for="tel">Telephon</label>
+        <input type="tel" name="tel" id="tel" placeholder="+38(***)***-**-**" />
+      </div>
+      <div class="form-field">
+        <label for="mail">Post</label>
+        <input type="email" name="tel" id="mail" placeholder="****@gmail.com" />
+      </div>
+      <div role="group" class="group">
+        <h2 class="grop-title">Topic of report</h2>
+        <ul class="topic-options">
+          <li>
+            <input type="checkbox" name="topic" value="html" id="html" />
+            <label for="html">HTML</label>
+          </li>
+          <li>
+            <input type="checkbox" name="topic" value="css" id="css" /> <label for="css">CSS</label>
+          </li>
+          <li>
+            <input type="checkbox" name="topic" value="js" id="js" />
+            <label for="js">JavaScript</label>
+          </li>
+        </ul>
+      </div>
+      <div role="group" class="group">
+        <h2 class="grop-title">Your level of expertise</h2>
+        <ul class="experince-options">
+          <li>
+            <input type="radio" name="experience" value="junior" id="junior" />
+            <label for="junior">Junior</label>
+          </li>
+          <li>
+            <input type="radio" name="experience" value="middle" id="middle" />
+            <label for="junior">Middle</label>
+          </li>
+          <li>
+            <input type="radio" name="experience" value="senior" id="senior" />
+            <label for="junior">Senior</label>
+          </li>
+        </ul>
+      </div>
+      <div class="form-field">
+        <label for="date">Report date</label>
+        <input type="datetime-local" name="date" id="date" class="date" />
+      </div>
+      <div class="form-field">
+        <label for="pdf">Download</label>
+        <input type="file" name="pdf" id="pdf" />
+      </div>
+      <div class="form-field">
+        <label for="comment">Write a comment</label>
+        <textarea class="comment" name="comment" id="comment" rows="10"> </textarea>
+      </div>
+      <div class="form-field">
+        <input type="checkbox" name="policy" id="policy" />
+        <label for="policy">I agree</label>
+      </div>
+      <button type="submit">Send</button>
+    </form>
+    <!-- <a href="./index.html">Назад на главную</a>
+    <form class="form" avtocopmlet="off">
+      <label class="form-field">
+        <input type="text" class="form-input" name="name" placeholder=" " />
+        <span class="form-label">Name</span>
+        <span class="icon"></span>
+      </label>
+      <label class="form-field">
+        <input type="text" class="form-input" name="name" placeholder=" " />
+        <span class="form-label">Post</span>
+        <span class="icon"></span>
+      </label>
+
+      <label class="form-field">
+        <input type="mail" class="form-input" name="name" placeholder=" " />
+        <span class="form-label">Mail</span>
+        <span class="icon"></span>
+      </label>
+    </form>
+    <button tupe="submit">Оставить заявку</button> -->
+    <script>
+      (() => {
+        document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+          e.preventDefault();
+
+          new FormData(e.currentTarget).forEach((value, name) => console.log('${name}: ${value}'));
+          e.currentTarget.reset();
+        });
+      })();
+    </script>
+  </body>
+</html>

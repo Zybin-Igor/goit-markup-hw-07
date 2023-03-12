@@ -1,0 +1,130 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1158px;
+  }
+  .header {
+    padding-bottom: 24px;
+  }
+  .page-nav {
+    gap: 40px;
+  }
+
+  .team-list {
+    gap: 24px;
+  }
+
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+  }
+  .address {
+    display: flex;
+    gap: 40px;
+  }
+  .address .link {
+    font-size: 16px;
+    line-height: 1.5;
+
+    letter-spacing: 0.02em;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-2x.jpg);
+    }
+  }
+
+  .hero .hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 48px;
+    max-width: 496px;
+  }
+
+  .work-section {
+    display: inline;
+  }
+  .skils-padding {
+    padding-top: 120px;
+    padding-bottom: 0;
+  }
+  .skils-list {
+    flex-wrap: nowrap;
+  }
+
+  .skils-list .title,
+  .team-list .title,
+  .project-list .link-title {
+    color: var(--logo-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+  }
+
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .agree-form {
+    margin-right: 0;
+  }
+
+  .footer > .container {
+    flex-wrap: nowrap;
+  }
+  .footer-form {
+    flex-wrap: nowrap;
+  }
+  .logo-box {
+    margin-right: 96px;
+  }
+  .footer-soc {
+    margin-right: 56px;
+  }
+
+  .footer-text {
+    width: 264px;
+  }
+
+  .skils-block {
+    display: flex;
+  }
+
+  .team-card {
+    width: calc((100% - 72px) / 4);
+  }
+  .section-padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .section-secondary > .container,
+  .clients > .container {
+    width: 1158px;
+  }
+
+  .clients-list {
+    gap: 24px;
+  }
+  .clients-item {
+    width: calc((100% - 120px) / 6);
+  }
+
+  .modal {
+    width: 408px;
+    min-height: 584px;
+  }
+}
